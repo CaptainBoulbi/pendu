@@ -33,7 +33,7 @@ void afficherMot(char mot[], int l){
 
 void afficherimg(char img[], int pts){
 	std::string ligne;
-	std::string filename = "../data/pendu/img/";
+	std::string filename = "/home/cptbb/dev/built/data/pendu/img/";
 	filename += img;
 
 	std::ifstream fic (filename);
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]){
 		strncpy(img, argv[1], (int)sizeof(argv[1]));
 	}
 
-	std::ifstream fic ("../data/pendu/dico.txt");
+	std::ifstream fic ("/home/cptbb/dev/built/data/pendu/dico.txt");
 	if (!fic.is_open()){
 		std::cout << "Erreur : ne peut pas ouvrir le fichier dico.txt" << std::endl;
 		return -1;
